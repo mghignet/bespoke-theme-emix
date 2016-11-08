@@ -14,7 +14,8 @@
     "url": "git://github.com/mghignet/bespoke-theme-emix.git"
   },
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "demo": "gulp demo"
   },
   "peerDependencies": {
     "bespoke": ">=1.0.0"
