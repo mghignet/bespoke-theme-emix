@@ -15,7 +15,8 @@
   },
   "scripts": {
     "test": "gulp",
-    "demo": "gulp demo"
+    "demo": "gulp demo",
+    "dev": "gulp dev"
   },
   "peerDependencies": {
     "bespoke": ">=1.0.0"

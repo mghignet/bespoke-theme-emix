@@ -21,6 +21,7 @@ var gulp = require('gulp'),
 
 gulp.task('default', ['clean', 'compile']);
 gulp.task('demo', ['compile', 'watch', 'connect']);
+gulp.task('dev', ['compile', 'watch']);
 gulp.task('compile', ['compile:lib', 'compile:demo']);
 gulp.task('compile:lib', ['stylus', 'browserify:lib']);
 gulp.task('compile:demo', ['jade', 'browserify:demo']);
