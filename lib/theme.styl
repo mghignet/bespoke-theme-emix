@@ -2,7 +2,7 @@
 // Stylus: http://learnboost.github.io/stylus
 
 @import url('https://fonts.googleapis.com/css?family=PT+Mono')
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700');
 
 @import 'normalizecss/normalize.css'
 
@@ -53,6 +53,14 @@ a:active {
   color: $primary-color
   text-decoration: underline
 }
+
+p
+  color: #555
+  font-size: 1.3rem
+  font-weight: 600
+
+  strong
+    color: $primary-color
 
 .bespoke-parent
   text-size-adjust: auto
@@ -140,18 +148,20 @@ section
   h1, h2, h3, h4, h5, h6
     color: white
 
-.quote
+.quote-bg
   background: $primary-color
 
-.quote-text
-  p
-    color: white
-    font-family: 'PT Mono', sans-serif
-    font-size: 2.4rem
-    text-align: right
+.quote,
+.subquote {
+  color: white
+  font-family: 'PT Mono', sans-serif
+  font-size: 2rem
+  text-align: right
+}
 
-  p.subquote
-    font-size: 1.8rem
+.subquote
+  font-size: 1.4rem
+  margin-top: 2em
 
 ul
   list-style-type: none
