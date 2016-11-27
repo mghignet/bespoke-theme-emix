@@ -95,10 +95,6 @@ a:active {
   opacity: 0
   pointer-events: none
 
-.bespoke-bullet
-  .token.comment
-    color: #CDFF17
-
 .bespoke-bullet-inactive
   opacity: 0
   pointer-events: none
@@ -128,6 +124,12 @@ a:active {
   height: 100%
   background: $primary-color
   transition: width .3s ease
+
+.token.comment
+  color: #cdff17
+  .bespoke-bullet &,
+  li &
+    color: #cdff17
 
 aside
   background: white
