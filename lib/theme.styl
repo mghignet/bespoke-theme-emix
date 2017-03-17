@@ -4,12 +4,15 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono')
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
 @import 'normalizecss/normalize.css'
 
-$primary-color                  = #005EBF;
-$quote-background-color         = #FFCE86;
-$text-color                     = #111;
+$primary-color = #005EBF;
+$quote-background-color = #005EBF;
+$dammit-background-color = #E24C00;
+$emphatic-background-color = #009665;
+$text-color = #111;
 
 * {
   box-sizing: border-box
@@ -17,7 +20,6 @@ $text-color                     = #111;
   font-family: 'PT Mono', sans-serif
   font-size: 16px
 }
-
 
 h1, h2, h3, h4, h5, h6
   letter-spacing: -1px
@@ -178,16 +180,21 @@ section
   text-align: center
 
 .emphatic
-  background: #1385FB
+  background: $emphatic-background-color
 
 .emphatic-text
-  color: white
-
+  padding: 0 10%
   h1, h2, h3, h4, h5, h6
     color: white
+    font-family: 'Anton'
+    letter-spacing: 1px
+  h1
+    font-size: 8em
+  h2
+    font-size: 5em
 
 .quote-bg
-  background: $primary-color
+  background: $quote-background-color
 
 .quote,
 .subquote {
@@ -203,9 +210,15 @@ section
   font-size: 1.4rem
   margin-top: 2em
 
+.dammit-bg {
+  background: $dammit-background-color
+}
+
 ul
   list-style-type: none
   padding-left: 0
+  li
+    margin-bottom: 10px;
 
 ul.column
   height: 100%
